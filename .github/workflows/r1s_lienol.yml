@@ -49,7 +49,7 @@ jobs:
         run: |
           cd friendlywrt-h5
           . ../remove_unused_config.sh
-          cat ../app_config.seed >> configs/config_h5
+          cat ../app_config_lienol.seed >> configs/config_h5
           cd friendlywrt
           git config --local user.email "action@github.com" && git config --local user.name "GitHub Action"
           git remote add upstream https://github.com/Lienol/openwrt && git fetch upstream
